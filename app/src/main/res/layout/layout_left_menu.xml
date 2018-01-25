@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/menu_bg"
+        android:orientation="vertical" >
+        <TextView
+            android:id="@+id/exit_app"
+            style="@style/style_bt_text"
+            android:drawableLeft="@drawable/exit_app"
+            android:clickable="true"
+            android:text="退出应用" />
+        <TextView
+            android:id="@+id/about_app"
+            style="@style/style_bt_text"
+            android:drawableLeft="@drawable/about_player"
+            android:clickable="true"
+            android:text="关于追梦音乐" />
+        <TextView
+            android:id="@+id/set_time_stop_play"
+            style="@style/style_bt_text"
+            android:drawableLeft="@drawable/set_time"
+            android:clickable="true"
+            android:text="定时关闭播放音乐"/>
+        <TextView
+            android:id="@+id/night_mode"
+            style="@style/style_bt_text"
+            android:drawableLeft="@drawable/night_mode"
+            android:text="夜间模式" />
+        <TextView
+            android:id="@+id/setting"
+            style="@style/style_bt_text"
+            android:drawableLeft="@drawable/setting"
+            android:clickable="true"
+            android:text="设置" />
+    </LinearLayout>
+
+</ScrollView>

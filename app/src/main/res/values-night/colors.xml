@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- night values colors.xml -->
+<resources>
+    <color name="colorPrimary">#35464e</color>
+    <color name="colorPrimaryDark">#212a2f</color>
+    <color name="colorAccent">#212a2f</color>
+    <color name="textColorPrimary">#616161</color>
+    <color name="viewBackground">#212a2f</color>
+    <color name="colorDayNightChange">@android:color/holo_blue_dark</color>
+    <color name="text_color">#6a78f6</color>
+    <color name="dialog_background">#000000</color>
+</resources>

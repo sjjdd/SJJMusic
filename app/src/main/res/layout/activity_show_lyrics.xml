@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:lrc="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context="company.sunjunjie.come.sjjmusicplayer60.Activity.ShowLyricsActivity">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        lrc:popupTheme="@style/ThemeOverlay.AppCompat.Light"></android.support.v7.widget.Toolbar>
+    <company.sunjunjie.come.sjjmusicplayer60.DefineItem.LrcView
+        android:id="@+id/lrc"
+        android:layout_below="@+id/toolbar"
+        android:layout_width="wrap_content"
+        android:layout_height="450dp"
+        android:layout_gravity="center"
+        android:background="@android:color/black"
+        lrc:animationDuration="1000"
+        lrc:currentTextColor="?attr/colorAccent"
+        lrc:dividerHeight="24dp"
+        lrc:normalTextColor="@android:color/white"
+        lrc:textSize="16sp"/>
+    <RelativeLayout
+        android:layout_below="@+id/lrc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+        <Button
+            android:id="@+id/play_in_lyric"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/playinlyric"
+            android:layout_centerInParent="true" />
+
+        <Button
+            android:id="@+id/next_in_lyric"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignBaseline="@+id/play_in_lyric"
+            android:layout_alignBottom="@+id/play_in_lyric"
+            android:layout_marginLeft="22dp"
+            android:layout_marginStart="22dp"
+            android:layout_toEndOf="@+id/play_in_lyric"
+            android:layout_toRightOf="@+id/play_in_lyric"
+            android:background="@drawable/nextinlyric" />
+    </RelativeLayout>
+</RelativeLayout>

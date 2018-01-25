@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/lockbackground"
+    tools:context="company.sunjunjie.come.sjjmusicplayer60.Activity.MyLockScreenActivity">
+    <company.sunjunjie.come.sjjmusicplayer60.SJJTextView
+        android:id="@+id/show_song_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/play"
+        android:layout_toLeftOf="@+id/play"
+        android:text="爱情公寓"
+        android:singleLine="true"
+        android:scrollHorizontally = "true"
+        android:ellipsize = "marquee"
+        android:marqueeRepeatLimit ="marquee_forever"
+        android:textSize="25dp"
+        />
+    <company.sunjunjie.come.sjjmusicplayer60.SJJTextView
+        android:id="@+id/show_singer_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="群星"
+        android:textSize="25dp"
+        android:singleLine="true"
+        android:scrollHorizontally = "true"
+        android:ellipsize = "marquee"
+        android:marqueeRepeatLimit ="marquee_forever"
+        android:layout_toRightOf="@+id/next"
+        android:layout_above="@+id/next"/>
+    <Button
+        android:id="@+id/center_btn"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_centerInParent="true"
+        android:background="#00000000"/>
+    <Button
+        android:id="@+id/play"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_toLeftOf="@+id/center_btn"
+        android:layout_above="@+id/center_btn"
+        android:background="@drawable/pause"/>
+    <Button
+        android:id="@+id/next"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_toRightOf="@+id/center_btn"
+        android:layout_above="@+id/center_btn"
+        android:background="@drawable/next"/>
+    <Button
+        android:id="@+id/close"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="69dp"
+        android:background="@drawable/unlock"
+        />
+</RelativeLayout>

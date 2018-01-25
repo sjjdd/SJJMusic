@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:id="@+id/root"
+    android:layout_gravity="start"
+    android:orientation="vertical"
+    >
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"></android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:id="@+id/fragment_layout"
+        android:orientation="vertical"
+        android:layout_below="@id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/bottom_layout">
+
+            <TextView
+                android:id="@+id/musictime"
+                android:layout_width="40dp"
+                android:layout_height="15dp"
+                android:textColor="@color/text_color"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:text="00:00" />
+
+            <SeekBar
+                android:id="@+id/process_bar"
+                android:layout_width="240dp"
+                android:layout_height="50dp"
+                android:layout_toRightOf="@+id/musictime"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:id="@+id/musictotal"
+                android:layout_width="40dp"
+                android:layout_height="15dp"
+                android:layout_toRightOf="@+id/process_bar"
+                android:textColor="@color/text_color"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="00:00" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/bottom_layout"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="#20000000"
+            android:padding="5dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+        <RelativeLayout
+            android:id="@+id/showlyrics"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <company.sunjunjie.come.sjjmusicplayer60.CircleImageView
+                android:id="@+id/imageOfSong"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/blue"
+                />
+            <company.sunjunjie.come.sjjmusicplayer60.SJJTextView
+                android:id="@+id/music_info_textView"
+                android:layout_width="100dp"
+                android:layout_height="25dp"
+                android:layout_toRightOf="@+id/imageOfSong"
+                android:singleLine="true"
+                android:scrollHorizontally = "true"
+                android:ellipsize = "marquee"
+                android:marqueeRepeatLimit ="marquee_forever"
+                android:textColor="@color/text_color"
+                android:text="追梦音乐"/>
+
+
+            <company.sunjunjie.come.sjjmusicplayer60.SJJTextView
+                android:id="@+id/singer_info_textView"
+                android:layout_width="100dp"
+                android:layout_height="25dp"
+                android:singleLine="true"
+                android:scrollHorizontally = "true"
+                android:ellipsize = "marquee"
+                android:marqueeRepeatLimit ="marquee_forever"
+                android:layout_toRightOf="@+id/imageOfSong"
+                android:textColor="@color/text_color"
+                android:layout_below="@id/music_info_textView"
+                android:text="点击歌曲"/>
+        </RelativeLayout>
+
+            <Button
+                android:id="@+id/current_playing_button"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/currentplay"/>
+
+            <Button
+                android:id="@+id/next_song_button"
+                android:layout_toLeftOf="@id/current_playing_button"
+                android:layout_toStartOf="@id/current_playing_button"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/next"/>
+
+
+            <Button
+                android:id="@+id/play_button"
+                android:layout_toLeftOf="@id/next_song_button"
+                android:layout_toStartOf="@id/next_song_button"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/pause"/>
+
+
+            <Button
+                android:id="@+id/play_mode_button"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_toLeftOf="@id/play_button"
+                android:layout_toStartOf="@id/play_button"
+                android:layout_centerVertical="true"
+                android:background="@drawable/singlecycle"/>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

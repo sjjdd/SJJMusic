@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dialog_background"
+  >
+<RelativeLayout
+    android:id="@+id/set_1_stop"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1分钟后"
+        android:textSize="20dp"
+        android:textColor="@color/text_color"
+        />
+    <Button
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/xuanzeq"/>
+</RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/set_10_stop"
+        android:layout_below="@+id/set_1_stop"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10分钟后"
+            android:textSize="20dp"
+            android:textColor="@color/text_color"/>
+        <Button
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/xuanzeq"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/set_15_stop"
+        android:layout_below="@+id/set_10_stop"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="15分钟后"
+            android:textSize="20dp"
+            android:textColor="@color/text_color"/>
+        <Button
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/xuanzeq"/>
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/close_set_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="关闭"
+            android:textColor="@color/text_color"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:background="@color/colorPrimary"/>
+    </LinearLayout>
+</RelativeLayout>

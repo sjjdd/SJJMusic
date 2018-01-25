@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:leon="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="company.sunjunjie.come.sjjmusicplayer60.Activity.SJJSettingActivity">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        leon:popupTheme="@style/ThemeOverlay.AppCompat.Light"></android.support.v7.widget.Toolbar>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="#fff"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/headimage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="孙俊杰"
+                android:textColor="@color/text_color"
+                android:textSize="16sp"/>
+        </LinearLayout>
+
+
+        <com.leon.lib.settingview.LSettingItem
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/item_one"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            leon:isShowRightText="true"
+            leon:leftIconSize="36dp"
+            leon:leftText="我的消息"
+            android:textColor="@color/text_color"
+            leon:leftTextMarginLeft="30dp"
+            leon:rightText="99+"
+            leon:rightTextColor="@color/gray"
+            leon:rightTextSize="14"/>
+
+        <com.leon.lib.settingview.LSettingItem
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            leon:isShowRightText="true"
+            leon:leftIcon="@drawable/download"
+            leon:leftText="我的下载"
+            android:textColor="@color/text_color"
+            leon:rightText="V1.0.0"
+            leon:rightTextColor="@color/colorPrimary"
+            leon:LtextSize="20"/>
+
+        <com.leon.lib.settingview.LSettingItem
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            leon:leftIcon="@drawable/credit_card"
+            leon:leftText="我的卡片"
+            android:textColor="@color/text_color"
+            leon:rightStyle="iconHide"/>
+    <com.leon.lib.settingview.LSettingItem
+        android:id="@+id/changebackground"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        leon:leftIcon="@drawable/changebackground"
+        leon:leftText="换新衣"
+        android:textColor="@color/text_color"
+        />
+    <com.leon.lib.settingview.LSettingItem
+        android:id="@+id/advice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        leon:leftIcon="@drawable/advice"
+        leon:leftText="提出反馈"
+        android:textColor="@color/text_color"
+        />
+        <com.leon.lib.settingview.LSettingItem
+            android:id="@+id/item_four"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/MyCheckBox"
+            leon:leftIcon="@drawable/ic_action_action_add_shopping_cart"
+            leon:leftText="我的购物车"
+            android:textColor="@color/text_color"
+            leon:rightStyle="iconCheck"/>
+
+        <com.leon.lib.settingview.LSettingItem
+            android:id="@+id/item_five"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/MyCheckBox"
+            leon:isShowUnderLine="false"
+            leon:leftIcon="@drawable/no_wifi"
+            leon:leftText="使用流量播放"
+            android:textColor="@color/text_color"
+            leon:rightStyle="iconSwitch"/>
+
+        <com.leon.lib.settingview.LSettingItem
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            leon:isShowUnderLine="false"
+            leon:leftText="不显示分割线"
+            android:textColor="@color/text_color"
+            leon:rightStyle="iconSwitch"/>
+    </LinearLayout>
+
+

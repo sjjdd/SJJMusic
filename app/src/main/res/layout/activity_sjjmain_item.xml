@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:orientation="horizontal">
+
+    <company.sunjunjie.come.sjjmusicplayer60.CircleImageView
+        android:id="@+id/song_image"
+        android:layout_width="50dp"
+        android:layout_height="50dp" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+      >
+        <TextView
+            android:id="@+id/music_name"
+            android:layout_width="100dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/text_color"
+            android:singleLine="true"
+            />
+        <TextView
+            android:id="@+id/music_singer_name"
+            android:layout_width="100dp"
+            android:layout_height="25dp"
+            android:textColor="@color/text_color"
+            android:layout_marginLeft="10dp"
+            android:singleLine="true"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/favorite_block"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="70dp">
+        <Button
+            android:id="@+id/favorite"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:background="@drawable/like"
+            android:layout_gravity="center"
+            android:focusable="false"
+            android:clickable="true"/>
+    </LinearLayout>
+   <LinearLayout
+       android:id="@+id/delete_block"
+       android:layout_width="50dp"
+       android:layout_height="50dp">
+       <Button
+           android:id="@+id/music_delete"
+           android:layout_width="25dp"
+           android:layout_height="25dp"
+           android:layout_gravity="center"
+           android:background="@drawable/out"
+           android:layout_marginLeft="10dp"
+           android:focusable="false"
+           android:clickable="true"/><!--一定要加focusable，否则无法回调-->
+   </LinearLayout>
+
+</LinearLayout>

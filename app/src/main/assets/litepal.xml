@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<litepal>
+    <dbname value="MusicPlayer"></dbname>
+    <version value="2"></version>
+    <List>
+        <mapping class="company.sunjunjie.come.sjjmusicplayer60.Music"></mapping>
+        <mapping class="company.sunjunjie.come.sjjmusicplayer60.PlayedMusic"></mapping>
+        <mapping class="company.sunjunjie.come.sjjmusicplayer60.likedMusic"></mapping>
+        <mapping class="company.sunjunjie.come.sjjmusicplayer60.RecentPlayedMusic"></mapping>
+    </List>
+</litepal>
